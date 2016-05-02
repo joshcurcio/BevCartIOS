@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="loginVC" customModule="BevCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjR-YY-Ebf" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="100" y="566" width="215" height="30"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cmj-gY-xeY">
+                                <rect key="frame" x="25" y="42" width="364" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UD-sC-blL">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUv-jS-UMF">
+                                        <rect key="frame" x="0.0" y="30" width="364" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-UM-2Df">
+                                <rect key="frame" x="149" y="124" width="116" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsk-Ah-Afy">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gw-Ks-wDW">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="78" id="nIj-qh-WFu"/>
+                                                </constraints>
+                                                <state key="normal" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ash-CE-BjO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fK-4W-5EM">
+                                                <rect key="frame" x="78" y="0.0" width="38" height="30"/>
+                                                <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egv-hu-cgT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzO-rZ-gKy">
+                                        <rect key="frame" x="38" y="30" width="78" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="78" id="WRo-WB-MWE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cmj-gY-xeY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="4Le-PL-0Qm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cmj-gY-xeY" secondAttribute="trailing" constant="5" id="ZX3-r8-KiN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZjR-YY-Ebf" secondAttribute="bottom" constant="378" id="lIS-nC-TAD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="loginFacebook" destination="ZjR-YY-Ebf" id="eAc-VX-JBV"/>
+                        <outlet property="userEmail" destination="7UD-sC-blL" id="Z4h-S4-IgT"/>
+                        <outlet property="userPassword" destination="iUv-jS-UMF" id="qeW-yH-kyc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="437"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="p4Z-Jq-w6x">
+            <objects>
+                <viewController storyboardIdentifier="mapVC" id="eWm-IZ-dZo" customClass="mapVC" customModule="BevCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWv-9Q-5wN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZFt-Rf-DN7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92u-bX-TlK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-gx-W7x">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="theMap" destination="Ol5-gx-W7x" id="N8l-xy-IHR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fS4-5c-NBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215" y="437"/>
+        </scene>
+    </scenes>
+</document>

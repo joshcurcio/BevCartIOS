@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037417981C6A7488008500AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037417971C6A7488008500AE /* AppDelegate.swift */; };
+		0374179F1C6A7488008500AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374179E1C6A7488008500AE /* Assets.xcassets */; };
+		037417A21C6A7488008500AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037417A01C6A7488008500AE /* LaunchScreen.storyboard */; };
+		037417AD1C6A7489008500AE /* BevCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037417AC1C6A7489008500AE /* BevCartTests.swift */; };
+		037417B81C6A7489008500AE /* BevCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037417B71C6A7489008500AE /* BevCartUITests.swift */; };
+		037417BD1C6A7489008500AE /* BevCart WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 037417BC1C6A7489008500AE /* BevCart WatchKit App.app */; };
+		037417C31C6A7489008500AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037417C11C6A7489008500AE /* Interface.storyboard */; };
+		037417C51C6A7489008500AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037417C41C6A7489008500AE /* Assets.xcassets */; };
+		037417CC1C6A7489008500AE /* BevCart WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 037417CB1C6A7489008500AE /* BevCart WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		037417D31C6A7489008500AE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037417D21C6A7489008500AE /* InterfaceController.swift */; };
+		037417D51C6A7489008500AE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037417D41C6A7489008500AE /* ExtensionDelegate.swift */; };
+		037417D71C6A7489008500AE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037417D61C6A7489008500AE /* NotificationController.swift */; };
+		037417D91C6A7489008500AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037417D81C6A7489008500AE /* Assets.xcassets */; };
+		037417F51C6ACAED008500AE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037417EE1C6ACAED008500AE /* Bolts.framework */; };
+		037417F61C6ACAED008500AE /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 037417EF1C6ACAED008500AE /* FacebookSDKStrings.bundle */; };
+		037417F71C6ACAED008500AE /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037417F01C6ACAED008500AE /* FBAudienceNetwork.framework */; };
+		037417F81C6ACAED008500AE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037417F11C6ACAED008500AE /* FBSDKCoreKit.framework */; };
+		037417F91C6ACAED008500AE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037417F21C6ACAED008500AE /* FBSDKLoginKit.framework */; };
+		037417FA1C6ACAED008500AE /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037417F31C6ACAED008500AE /* FBSDKMessengerShareKit.framework */; };
+		037417FB1C6ACAED008500AE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037417F41C6ACAED008500AE /* FBSDKShareKit.framework */; };
+		03F591BB1C6ACD4F00ACC734 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F591BA1C6ACD4F00ACC734 /* libicucore.tbd */; };
+		03F591BD1C6ACD5E00ACC734 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F591BC1C6ACD5E00ACC734 /* libc++.tbd */; };
+		03F591BF1C6ACD6800ACC734 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F591BE1C6ACD6800ACC734 /* CFNetwork.framework */; };
+		03F591C11C6ACD7200ACC734 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F591C01C6ACD7200ACC734 /* Security.framework */; };
+		03F591C31C6ACD8700ACC734 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F591C21C6ACD8700ACC734 /* SystemConfiguration.framework */; };
+		03F591C51C6ACE8C00ACC734 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F591C41C6ACE8C00ACC734 /* Firebase.framework */; };
+		267389F81272B50863144033 /* Pods_BevCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77590AAEE9C32E4FD0FCF42D /* Pods_BevCart.framework */; };
+		4D12659A1CD5426200B9A821 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1265991CD5426200B9A821 /* Course.swift */; };
+		4D12659E1CD5459600B9A821 /* UIViewController+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D12659D1CD5459600B9A821 /* UIViewController+Extras.swift */; };
+		4D1265A21CD54A9300B9A821 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1265A11CD54A9300B9A821 /* FoodItem.swift */; };
+		4D1265A41CD54A9E00B9A821 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1265A31CD54A9E00B9A821 /* DrinkItem.swift */; };
+		4D1265A81CD556B300B9A821 /* GolfCoursePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1265A71CD556B300B9A821 /* GolfCoursePickerVC.swift */; };
+		4D1265AA1CD5590600B9A821 /* CourseMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1265A91CD5590600B9A821 /* CourseMenuTVC.swift */; };
+		5011EF711CD1054A0093BA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5011EF701CD1054A0093BA2F /* Main.storyboard */; };
+		5011EF731CD105AF0093BA2F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF721CD105AF0093BA2F /* LoginVC.swift */; };
+		5011EF751CD105D50093BA2F /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF741CD105D50093BA2F /* Core.swift */; };
+		5011EF7D1CD106300093BA2F /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF7A1CD106300093BA2F /* UserVC.swift */; };
+		5011EF7E1CD106300093BA2F /* UserServiceListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF7B1CD106300093BA2F /* UserServiceListTVC.swift */; };
+		5011EF831CD1063D0093BA2F /* ProviderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF801CD1063D0093BA2F /* ProviderVC.swift */; };
+		5011EF841CD1063D0093BA2F /* ProviderServiceListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF811CD1063D0093BA2F /* ProviderServiceListTVC.swift */; };
+		5011EF851CD1063D0093BA2F /* ProviderServiceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF821CD1063D0093BA2F /* ProviderServiceDetailVC.swift */; };
+		5011EF881CD106460093BA2F /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF861CD106460093BA2F /* AdminVC.swift */; };
+		5011EF891CD106460093BA2F /* AdminServiceListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF871CD106460093BA2F /* AdminServiceListTVC.swift */; };
+		5011EF8B1CD1066D0093BA2F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011EF8A1CD1066D0093BA2F /* Order.swift */; };
+		50897A661C6D196100371776 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50897A651C6D196100371776 /* mapVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		037417A91C6A7489008500AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374178C1C6A7488008500AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037417931C6A7488008500AE;
+			remoteInfo = BevCart;
+		};
+		037417B41C6A7489008500AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374178C1C6A7488008500AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037417931C6A7488008500AE;
+			remoteInfo = BevCart;
+		};
+		037417BE1C6A7489008500AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374178C1C6A7488008500AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037417BB1C6A7489008500AE;
+			remoteInfo = "BevCart WatchKit App";
+		};
+		037417CD1C6A7489008500AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374178C1C6A7488008500AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037417CA1C6A7489008500AE;
+			remoteInfo = "BevCart WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		037417E01C6A7489008500AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				037417CC1C6A7489008500AE /* BevCart WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417E41C6A7489008500AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				037417BD1C6A7489008500AE /* BevCart WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		037417941C6A7488008500AE /* BevCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BevCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		037417971C6A7488008500AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0374179E1C6A7488008500AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		037417A11C6A7488008500AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		037417A31C6A7488008500AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037417A81C6A7489008500AE /* BevCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BevCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		037417AC1C6A7489008500AE /* BevCartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevCartTests.swift; sourceTree = "<group>"; };
+		037417AE1C6A7489008500AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037417B31C6A7489008500AE /* BevCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BevCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		037417B71C6A7489008500AE /* BevCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevCartUITests.swift; sourceTree = "<group>"; };
+		037417B91C6A7489008500AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037417BC1C6A7489008500AE /* BevCart WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BevCart WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		037417C21C6A7489008500AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		037417C41C6A7489008500AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		037417C61C6A7489008500AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037417CB1C6A7489008500AE /* BevCart WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BevCart WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		037417D11C6A7489008500AE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		037417D21C6A7489008500AE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		037417D41C6A7489008500AE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		037417D61C6A7489008500AE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		037417D81C6A7489008500AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		037417DA1C6A7489008500AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037417EE1C6ACAED008500AE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		037417EF1C6ACAED008500AE /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		037417F01C6ACAED008500AE /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		037417F11C6ACAED008500AE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		037417F21C6ACAED008500AE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		037417F31C6ACAED008500AE /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		037417F41C6ACAED008500AE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		03F591BA1C6ACD4F00ACC734 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		03F591BC1C6ACD5E00ACC734 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		03F591BE1C6ACD6800ACC734 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		03F591C01C6ACD7200ACC734 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		03F591C21C6ACD8700ACC734 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		03F591C41C6ACE8C00ACC734 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		095668136DBA9DC2B09C621A /* Pods-BevCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BevCart.release.xcconfig"; path = "Pods/Target Support Files/Pods-BevCart/Pods-BevCart.release.xcconfig"; sourceTree = "<group>"; };
+		4D1265991CD5426200B9A821 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		4D12659D1CD5459600B9A821 /* UIViewController+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extras.swift"; sourceTree = "<group>"; };
+		4D1265A11CD54A9300B9A821 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodItem.swift; path = bevcart/FoodItem.swift; sourceTree = SOURCE_ROOT; };
+		4D1265A31CD54A9E00B9A821 /* DrinkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrinkItem.swift; path = bevcart/DrinkItem.swift; sourceTree = SOURCE_ROOT; };
+		4D1265A71CD556B300B9A821 /* GolfCoursePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GolfCoursePickerVC.swift; path = ../GolfCoursePickerVC.swift; sourceTree = "<group>"; };
+		4D1265A91CD5590600B9A821 /* CourseMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseMenuTVC.swift; path = ../CourseMenuTVC.swift; sourceTree = "<group>"; };
+		5011EF701CD1054A0093BA2F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5011EF721CD105AF0093BA2F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = bevcart/LoginVC.swift; sourceTree = SOURCE_ROOT; };
+		5011EF741CD105D50093BA2F /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		5011EF7A1CD106300093BA2F /* UserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		5011EF7B1CD106300093BA2F /* UserServiceListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceListTVC.swift; sourceTree = "<group>"; };
+		5011EF801CD1063D0093BA2F /* ProviderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderVC.swift; sourceTree = "<group>"; };
+		5011EF811CD1063D0093BA2F /* ProviderServiceListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderServiceListTVC.swift; sourceTree = "<group>"; };
+		5011EF821CD1063D0093BA2F /* ProviderServiceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderServiceDetailVC.swift; sourceTree = "<group>"; };
+		5011EF861CD106460093BA2F /* AdminVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		5011EF871CD106460093BA2F /* AdminServiceListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminServiceListTVC.swift; sourceTree = "<group>"; };
+		5011EF8A1CD1066D0093BA2F /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Order.swift; path = bevcart/Order.swift; sourceTree = SOURCE_ROOT; };
+		50897A651C6D196100371776 /* mapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mapVC.swift; path = bevcart/mapVC.swift; sourceTree = SOURCE_ROOT; };
+		77590AAEE9C32E4FD0FCF42D /* Pods_BevCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BevCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC74B5898F5458094D036CE7 /* Pods-BevCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BevCart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BevCart/Pods-BevCart.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		037417911C6A7488008500AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F591C31C6ACD8700ACC734 /* SystemConfiguration.framework in Frameworks */,
+				03F591C11C6ACD7200ACC734 /* Security.framework in Frameworks */,
+				03F591BF1C6ACD6800ACC734 /* CFNetwork.framework in Frameworks */,
+				03F591BD1C6ACD5E00ACC734 /* libc++.tbd in Frameworks */,
+				03F591BB1C6ACD4F00ACC734 /* libicucore.tbd in Frameworks */,
+				037417F51C6ACAED008500AE /* Bolts.framework in Frameworks */,
+				037417F81C6ACAED008500AE /* FBSDKCoreKit.framework in Frameworks */,
+				03F591C51C6ACE8C00ACC734 /* Firebase.framework in Frameworks */,
+				037417FB1C6ACAED008500AE /* FBSDKShareKit.framework in Frameworks */,
+				037417FA1C6ACAED008500AE /* FBSDKMessengerShareKit.framework in Frameworks */,
+				037417F91C6ACAED008500AE /* FBSDKLoginKit.framework in Frameworks */,
+				037417F71C6ACAED008500AE /* FBAudienceNetwork.framework in Frameworks */,
+				267389F81272B50863144033 /* Pods_BevCart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417A51C6A7489008500AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417B01C6A7489008500AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417C81C6A7489008500AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0374178B1C6A7488008500AE = {
+			isa = PBXGroup;
+			children = (
+				037417961C6A7488008500AE /* BevCart */,
+				037417AB1C6A7489008500AE /* BevCartTests */,
+				037417B61C6A7489008500AE /* BevCartUITests */,
+				037417C01C6A7489008500AE /* BevCart WatchKit App */,
+				037417CF1C6A7489008500AE /* BevCart WatchKit Extension */,
+				037417951C6A7488008500AE /* Products */,
+				03F591B91C6ACCD100ACC734 /* Frameworks */,
+				A192E405D44D71E4EC10BCAD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		037417951C6A7488008500AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				037417941C6A7488008500AE /* BevCart.app */,
+				037417A81C6A7489008500AE /* BevCartTests.xctest */,
+				037417B31C6A7489008500AE /* BevCartUITests.xctest */,
+				037417BC1C6A7489008500AE /* BevCart WatchKit App.app */,
+				037417CB1C6A7489008500AE /* BevCart WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		037417961C6A7488008500AE /* BevCart */ = {
+			isa = PBXGroup;
+			children = (
+				5011EF741CD105D50093BA2F /* Core.swift */,
+				5011EF791CD1060B0093BA2F /* Custom Objects */,
+				5011EF781CD105F60093BA2F /* Admin */,
+				5011EF771CD105EE0093BA2F /* Provider */,
+				5011EF761CD105E70093BA2F /* User */,
+				4D12659C1CD5458A00B9A821 /* Class Extensions */,
+				037417971C6A7488008500AE /* AppDelegate.swift */,
+				5011EF701CD1054A0093BA2F /* Main.storyboard */,
+				0374179E1C6A7488008500AE /* Assets.xcassets */,
+				037417A01C6A7488008500AE /* LaunchScreen.storyboard */,
+				037417A31C6A7488008500AE /* Info.plist */,
+				50897A651C6D196100371776 /* mapVC.swift */,
+				5011EF721CD105AF0093BA2F /* LoginVC.swift */,
+			);
+			path = BevCart;
+			sourceTree = "<group>";
+		};
+		037417AB1C6A7489008500AE /* BevCartTests */ = {
+			isa = PBXGroup;
+			children = (
+				037417AC1C6A7489008500AE /* BevCartTests.swift */,
+				037417AE1C6A7489008500AE /* Info.plist */,
+			);
+			path = BevCartTests;
+			sourceTree = "<group>";
+		};
+		037417B61C6A7489008500AE /* BevCartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				037417B71C6A7489008500AE /* BevCartUITests.swift */,
+				037417B91C6A7489008500AE /* Info.plist */,
+			);
+			path = BevCartUITests;
+			sourceTree = "<group>";
+		};
+		037417C01C6A7489008500AE /* BevCart WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				037417C11C6A7489008500AE /* Interface.storyboard */,
+				037417C41C6A7489008500AE /* Assets.xcassets */,
+				037417C61C6A7489008500AE /* Info.plist */,
+			);
+			path = "BevCart WatchKit App";
+			sourceTree = "<group>";
+		};
+		037417CF1C6A7489008500AE /* BevCart WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				037417D21C6A7489008500AE /* InterfaceController.swift */,
+				037417D41C6A7489008500AE /* ExtensionDelegate.swift */,
+				037417D61C6A7489008500AE /* NotificationController.swift */,
+				037417D81C6A7489008500AE /* Assets.xcassets */,
+				037417DA1C6A7489008500AE /* Info.plist */,
+				037417D01C6A7489008500AE /* Supporting Files */,
+			);
+			path = "BevCart WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		037417D01C6A7489008500AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				037417D11C6A7489008500AE /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03F591B91C6ACCD100ACC734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F591C41C6ACE8C00ACC734 /* Firebase.framework */,
+				03F591C21C6ACD8700ACC734 /* SystemConfiguration.framework */,
+				03F591C01C6ACD7200ACC734 /* Security.framework */,
+				03F591BE1C6ACD6800ACC734 /* CFNetwork.framework */,
+				03F591BC1C6ACD5E00ACC734 /* libc++.tbd */,
+				03F591BA1C6ACD4F00ACC734 /* libicucore.tbd */,
+				037417EE1C6ACAED008500AE /* Bolts.framework */,
+				037417EF1C6ACAED008500AE /* FacebookSDKStrings.bundle */,
+				037417F01C6ACAED008500AE /* FBAudienceNetwork.framework */,
+				037417F11C6ACAED008500AE /* FBSDKCoreKit.framework */,
+				037417F21C6ACAED008500AE /* FBSDKLoginKit.framework */,
+				037417F31C6ACAED008500AE /* FBSDKMessengerShareKit.framework */,
+				037417F41C6ACAED008500AE /* FBSDKShareKit.framework */,
+				77590AAEE9C32E4FD0FCF42D /* Pods_BevCart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D12659C1CD5458A00B9A821 /* Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D12659D1CD5459600B9A821 /* UIViewController+Extras.swift */,
+			);
+			name = "Class Extensions";
+			sourceTree = "<group>";
+		};
+		5011EF761CD105E70093BA2F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				4D1265A91CD5590600B9A821 /* CourseMenuTVC.swift */,
+				4D1265A71CD556B300B9A821 /* GolfCoursePickerVC.swift */,
+				5011EF7A1CD106300093BA2F /* UserVC.swift */,
+				5011EF7B1CD106300093BA2F /* UserServiceListTVC.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		5011EF771CD105EE0093BA2F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				5011EF801CD1063D0093BA2F /* ProviderVC.swift */,
+				5011EF811CD1063D0093BA2F /* ProviderServiceListTVC.swift */,
+				5011EF821CD1063D0093BA2F /* ProviderServiceDetailVC.swift */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		5011EF781CD105F60093BA2F /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				5011EF861CD106460093BA2F /* AdminVC.swift */,
+				5011EF871CD106460093BA2F /* AdminServiceListTVC.swift */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
+		5011EF791CD1060B0093BA2F /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5011EF8A1CD1066D0093BA2F /* Order.swift */,
+				4D1265991CD5426200B9A821 /* Course.swift */,
+				4D1265A11CD54A9300B9A821 /* FoodItem.swift */,
+				4D1265A31CD54A9E00B9A821 /* DrinkItem.swift */,
+			);
+			name = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		A192E405D44D71E4EC10BCAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC74B5898F5458094D036CE7 /* Pods-BevCart.debug.xcconfig */,
+				095668136DBA9DC2B09C621A /* Pods-BevCart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		037417931C6A7488008500AE /* BevCart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037417E51C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCart" */;
+			buildPhases = (
+				AFF7192F1A83C915A7E4F03C /* Check Pods Manifest.lock */,
+				037417901C6A7488008500AE /* Sources */,
+				037417911C6A7488008500AE /* Frameworks */,
+				037417921C6A7488008500AE /* Resources */,
+				037417E41C6A7489008500AE /* Embed Watch Content */,
+				F181F8544ADBD56A7C35B512 /* Embed Pods Frameworks */,
+				900AF9635264F711F44617BF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				037417BF1C6A7489008500AE /* PBXTargetDependency */,
+			);
+			name = BevCart;
+			productName = BevCart;
+			productReference = 037417941C6A7488008500AE /* BevCart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		037417A71C6A7489008500AE /* BevCartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037417E81C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCartTests" */;
+			buildPhases = (
+				037417A41C6A7489008500AE /* Sources */,
+				037417A51C6A7489008500AE /* Frameworks */,
+				037417A61C6A7489008500AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				037417AA1C6A7489008500AE /* PBXTargetDependency */,
+			);
+			name = BevCartTests;
+			productName = BevCartTests;
+			productReference = 037417A81C6A7489008500AE /* BevCartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		037417B21C6A7489008500AE /* BevCartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037417EB1C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCartUITests" */;
+			buildPhases = (
+				037417AF1C6A7489008500AE /* Sources */,
+				037417B01C6A7489008500AE /* Frameworks */,
+				037417B11C6A7489008500AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				037417B51C6A7489008500AE /* PBXTargetDependency */,
+			);
+			name = BevCartUITests;
+			productName = BevCartUITests;
+			productReference = 037417B31C6A7489008500AE /* BevCartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		037417BB1C6A7489008500AE /* BevCart WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037417E11C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCart WatchKit App" */;
+			buildPhases = (
+				037417BA1C6A7489008500AE /* Resources */,
+				037417E01C6A7489008500AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				037417CE1C6A7489008500AE /* PBXTargetDependency */,
+			);
+			name = "BevCart WatchKit App";
+			productName = "BevCart WatchKit App";
+			productReference = 037417BC1C6A7489008500AE /* BevCart WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		037417CA1C6A7489008500AE /* BevCart WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037417DD1C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCart WatchKit Extension" */;
+			buildPhases = (
+				037417C71C6A7489008500AE /* Sources */,
+				037417C81C6A7489008500AE /* Frameworks */,
+				037417C91C6A7489008500AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BevCart WatchKit Extension";
+			productName = "BevCart WatchKit Extension";
+			productReference = 037417CB1C6A7489008500AE /* BevCart WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0374178C1C6A7488008500AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CurcioDoverStudio;
+				TargetAttributes = {
+					037417931C6A7488008500AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6H72VGJQK7;
+					};
+					037417A71C6A7489008500AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6H72VGJQK7;
+						TestTargetID = 037417931C6A7488008500AE;
+					};
+					037417B21C6A7489008500AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6H72VGJQK7;
+						TestTargetID = 037417931C6A7488008500AE;
+					};
+					037417BB1C6A7489008500AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6H72VGJQK7;
+					};
+					037417CA1C6A7489008500AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6H72VGJQK7;
+					};
+				};
+			};
+			buildConfigurationList = 0374178F1C6A7488008500AE /* Build configuration list for PBXProject "bevcart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0374178B1C6A7488008500AE;
+			productRefGroup = 037417951C6A7488008500AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				037417931C6A7488008500AE /* BevCart */,
+				037417A71C6A7489008500AE /* BevCartTests */,
+				037417B21C6A7489008500AE /* BevCartUITests */,
+				037417BB1C6A7489008500AE /* BevCart WatchKit App */,
+				037417CA1C6A7489008500AE /* BevCart WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		037417921C6A7488008500AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037417A21C6A7488008500AE /* LaunchScreen.storyboard in Resources */,
+				5011EF711CD1054A0093BA2F /* Main.storyboard in Resources */,
+				0374179F1C6A7488008500AE /* Assets.xcassets in Resources */,
+				037417F61C6ACAED008500AE /* FacebookSDKStrings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417A61C6A7489008500AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417B11C6A7489008500AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417BA1C6A7489008500AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037417C51C6A7489008500AE /* Assets.xcassets in Resources */,
+				037417C31C6A7489008500AE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417C91C6A7489008500AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037417D91C6A7489008500AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		900AF9635264F711F44617BF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BevCart/Pods-BevCart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF7192F1A83C915A7E4F03C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F181F8544ADBD56A7C35B512 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BevCart/Pods-BevCart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		037417901C6A7488008500AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1265A21CD54A9300B9A821 /* FoodItem.swift in Sources */,
+				4D1265AA1CD5590600B9A821 /* CourseMenuTVC.swift in Sources */,
+				5011EF851CD1063D0093BA2F /* ProviderServiceDetailVC.swift in Sources */,
+				5011EF881CD106460093BA2F /* AdminVC.swift in Sources */,
+				5011EF7E1CD106300093BA2F /* UserServiceListTVC.swift in Sources */,
+				037417981C6A7488008500AE /* AppDelegate.swift in Sources */,
+				5011EF7D1CD106300093BA2F /* UserVC.swift in Sources */,
+				50897A661C6D196100371776 /* mapVC.swift in Sources */,
+				4D12659E1CD5459600B9A821 /* UIViewController+Extras.swift in Sources */,
+				5011EF891CD106460093BA2F /* AdminServiceListTVC.swift in Sources */,
+				4D12659A1CD5426200B9A821 /* Course.swift in Sources */,
+				4D1265A41CD54A9E00B9A821 /* DrinkItem.swift in Sources */,
+				5011EF751CD105D50093BA2F /* Core.swift in Sources */,
+				5011EF731CD105AF0093BA2F /* LoginVC.swift in Sources */,
+				5011EF8B1CD1066D0093BA2F /* Order.swift in Sources */,
+				5011EF831CD1063D0093BA2F /* ProviderVC.swift in Sources */,
+				4D1265A81CD556B300B9A821 /* GolfCoursePickerVC.swift in Sources */,
+				5011EF841CD1063D0093BA2F /* ProviderServiceListTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417A41C6A7489008500AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037417AD1C6A7489008500AE /* BevCartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417AF1C6A7489008500AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037417B81C6A7489008500AE /* BevCartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037417C71C6A7489008500AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037417D71C6A7489008500AE /* NotificationController.swift in Sources */,
+				037417D51C6A7489008500AE /* ExtensionDelegate.swift in Sources */,
+				037417D31C6A7489008500AE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		037417AA1C6A7489008500AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037417931C6A7488008500AE /* BevCart */;
+			targetProxy = 037417A91C6A7489008500AE /* PBXContainerItemProxy */;
+		};
+		037417B51C6A7489008500AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037417931C6A7488008500AE /* BevCart */;
+			targetProxy = 037417B41C6A7489008500AE /* PBXContainerItemProxy */;
+		};
+		037417BF1C6A7489008500AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037417BB1C6A7489008500AE /* BevCart WatchKit App */;
+			targetProxy = 037417BE1C6A7489008500AE /* PBXContainerItemProxy */;
+		};
+		037417CE1C6A7489008500AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037417CA1C6A7489008500AE /* BevCart WatchKit Extension */;
+			targetProxy = 037417CD1C6A7489008500AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		037417A01C6A7488008500AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				037417A11C6A7488008500AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		037417C11C6A7489008500AE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				037417C21C6A7489008500AE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		037417DB1C6A7489008500AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		037417DC1C6A7489008500AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		037417DE1C6A7489008500AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "BevCart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCart.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		037417DF1C6A7489008500AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "BevCart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCart.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		037417E21C6A7489008500AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BevCart_WatchKit_Extension;
+				INFOPLIST_FILE = "BevCart WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		037417E31C6A7489008500AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BevCart_WatchKit_Extension;
+				INFOPLIST_FILE = "BevCart WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		037417E61C6A7489008500AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC74B5898F5458094D036CE7 /* Pods-BevCart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BevCart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		037417E71C6A7489008500AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095668136DBA9DC2B09C621A /* Pods-BevCart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BevCart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		037417E91C6A7489008500AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BevCartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BevCart.app/BevCart";
+			};
+			name = Debug;
+		};
+		037417EA1C6A7489008500AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BevCartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BevCart.app/BevCart";
+			};
+			name = Release;
+		};
+		037417EC1C6A7489008500AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BevCartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BevCart;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		037417ED1C6A7489008500AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BevCartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurcioDoverStudio.BevCartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BevCart;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0374178F1C6A7488008500AE /* Build configuration list for PBXProject "bevcart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037417DB1C6A7489008500AE /* Debug */,
+				037417DC1C6A7489008500AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037417DD1C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCart WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037417DE1C6A7489008500AE /* Debug */,
+				037417DF1C6A7489008500AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037417E11C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCart WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037417E21C6A7489008500AE /* Debug */,
+				037417E31C6A7489008500AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037417E51C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037417E61C6A7489008500AE /* Debug */,
+				037417E71C6A7489008500AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037417E81C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037417E91C6A7489008500AE /* Debug */,
+				037417EA1C6A7489008500AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037417EB1C6A7489008500AE /* Build configuration list for PBXNativeTarget "BevCartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037417EC1C6A7489008500AE /* Debug */,
+				037417ED1C6A7489008500AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0374178C1C6A7488008500AE /* Project object */;
+}
