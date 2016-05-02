@@ -23,5 +23,6 @@ class Core: NSObject
     }
     
     static var selectedGolfCourse: Course!
+    static var orderPrice: Int!
     
 }

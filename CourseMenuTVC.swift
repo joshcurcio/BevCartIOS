@@ -17,24 +17,13 @@ class CourseMenuTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         
     }
     
     override func viewDidAppear(animated: Bool) {
-        if (Core.selectedGolfCourse == nil)
-        {
-            
-        }
-        else {
-            populateListView()
-        }
         
-        
-    }
-    
-    func populateListView()
-    {
+        print(Core.selectedGolfCourse.key + " " + Core.selectedGolfCourse.course_name)
         let foodRef = Core.fireBaseRef.childByAppendingPath("courses").childByAppendingPath(Core.selectedGolfCourse.key).childByAppendingPath("food")
         let drinkRef = Core.fireBaseRef.childByAppendingPath("courses").childByAppendingPath(Core.selectedGolfCourse.key).childByAppendingPath("drinks")
         
@@ -59,7 +48,7 @@ class CourseMenuTVC: UITableViewController {
             for key in dictionary
             {
                 let datum = key.value as! NSDictionary
-                print(datum)
+                //print(datum)
                 let newDrinkItem = DrinkItem()
                 newDrinkItem.itemName = datum["item"] as! String
                 newDrinkItem.itemCost = datum["cost"] as! Int
@@ -68,9 +57,9 @@ class CourseMenuTVC: UITableViewController {
                 self.tableView.reloadData()
             }
         }
-
+        
+        
     }
-    
 
     
     override func didReceiveMemoryWarning() {
@@ -102,13 +91,14 @@ class CourseMenuTVC: UITableViewController {
         {
             let item = foodList[indexPath.row]
             cell.textLabel?.text = "\(item.itemName) - \(item.itemCost) - \(item.itemQuant)"
+            
+
         }
         else
         {
             let item = drinkList[indexPath.row]
             cell.textLabel?.text = "\(item.itemName) - \(item.itemCost) - \(item.itemQuant)"
         }
-        
         
         return cell
     }
@@ -120,12 +110,16 @@ class CourseMenuTVC: UITableViewController {
         if (indexPath.section == 0)
         {
             foodList[indexPath.row].itemQuant = foodList[indexPath.row].itemQuant + 1
+            Core.orderPrice = Core.orderPrice + foodList[indexPath.row].itemCost
         }
         else
         {
             drinkList[indexPath.row].itemQuant = drinkList[indexPath.row].itemQuant + 1
+            Core.orderPrice = Core.orderPrice + drinkList[indexPath.row].itemCost
+            print("\(Core.orderPrice)")
+
         }
-        populateListView()
+        tableView.reloadData()
         
     }
     
